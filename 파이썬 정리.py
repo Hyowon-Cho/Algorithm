@@ -120,6 +120,48 @@ print(array)
 array = [i * i for i in range(1, 20)] #1~19
 print(array)
 
+리스트 관련 기타 메서드
+
+append()
+변수명.append()
+리스트에 원소 하나를 삽입할 때 사용한다
+시간 복잡도는 O(1)
+
+sort()
+변수명.sort() // 변수명.sort(reverse = True)
+기본 정렬 기능으로 오름차순(혹은 내림차순)으로 정렬한다
+시간 복잡도는 O(NlogN)
+
+reverse()
+변수명.reverse()
+리스트의 원소의 순서를 모두 뒤집어 놓는다
+시간 복잡도는 O(N)
+
+insert()
+insert(삽입할 위치 인덱스, 삽입할 값)
+특정한 인덱스의 위치에 원소를 삽입할 때 사용한다.
+시간 복잡도는 O(N)
+
+count() 
+변수명.count(특정 값)
+리스트에서 특정한 값을 가지는 데이터의 개수를 셀 때 사용한다.
+시간 복잡도는 O(N)
+
+remove()
+변수명.remove(특정 값)
+특정한 값을 갖는 원소를 제거하는데, 값을 가진 원소가 여러 개면 하나만 제거한다.
+시간 복잡도는 O(N)
+
+//
+
+리스트에서 특정 값을 가지는 원소 모두 제거하기
+
+a = [1, 2, 3, 4, 5, 5, 5]
+remove_set = {3, 5}
+
+#remove_set에 포함되지 않은 값만을 저장
+result = [i for i in a if i not in remove_set] # i라는 원소가 a에 있는 원소를 하나씩 확인 하면서 그때의 i 가 제거 대상이 아닐때만 남겨두어라
+print(result)
 
 
 
