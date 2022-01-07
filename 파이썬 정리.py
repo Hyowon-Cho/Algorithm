@@ -112,7 +112,7 @@ print(array)
 
 # 0 부터 19까지의 수 중에서 홀수만 포함하는 리스트
 
-array = [ i for i in range(20) if i % 2 == 1] #0~19
+array = [ i for i in range(20) if i % 2 == 1] #0~19 for = 그때의 그 원소만을 남겨두겠다.
 print(array)
 
 # 1 부터 9까지의 수들의 제곱 값을 포함하는 리스트
@@ -162,6 +162,14 @@ remove_set = {3, 5}
 #remove_set에 포함되지 않은 값만을 저장
 result = [i for i in a if i not in remove_set] # i라는 원소가 a에 있는 원소를 하나씩 확인 하면서 그때의 i 가 제거 대상이 아닐때만 남겨두어라
 print(result)
+
+//
+
+문자열 자료형
+
+문자열 변수를 초기화할 때는 큰따옴표나 작은 따옴표를 이용한다.
+
+
 
 
 
